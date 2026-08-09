@@ -141,7 +141,7 @@ for (i in 1:length(out_list_t$skew)) {
   title(names(out_list_t$skew)[i])
 }
 
-# Many null distributions are skewed, use emerpical ES rather than SES
+# Many null distributions are skewed, use empirical ES rather than SES
 
 
 # Prepare diversity data for analyses  -----------------------------------------
