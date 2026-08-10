@@ -8,7 +8,10 @@
 
 # Created: 04/28/2026
 
-# Description :
+# Description : Compiles and formats the resulting SES, ES, and diagnostic 
+# stats across files. Also visualizes normality diagnostics to allow users to 
+# decide between SES or ES values for further analyses, and creates plots
+# summarizing raw and effect size beta diversity values.
 
 
 # House Keeping ----------------------------------------------------------------
