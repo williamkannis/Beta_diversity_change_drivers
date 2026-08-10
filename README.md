@@ -92,7 +92,7 @@ to create the final data.frames for the use in analyses.
 
 **Required** only for route 2.
 
-## Diversity Output Data
+### Diversity Output Data
 The combined observed and summarized effect size data for native alpha, native 
 LCBD, and delta LCBD can be downloaded from ```Diversity Output Data.zip``` 
 at the [Zenodo repository]() and unzipped into the working directory. These 
