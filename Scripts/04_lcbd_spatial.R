@@ -65,4 +65,5 @@ plot_data <- spatial_data %>%
   )  
 
 # Export
-st_write(plot_data,file.path(export_dir,"lcbd_map_data.shp"),delete_layer=T)
+st_write(plot_data,file.path(export_dir,"figure_5_map_data.shp"),delete_layer=T)
+

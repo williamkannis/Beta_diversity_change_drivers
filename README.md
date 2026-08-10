@@ -329,6 +329,10 @@ HUC6 basin resolution to visualize spatial patterns.
 
 * Shapefiles exported to QGIS to create Figure 5.
 
+# Figures
+Contains raw R plots and .csv tables used to create the figures and tables in 
+the main manuscript and appendices. Most figures were edited in Adobe Illustrator
+or Qgis for strictly aesthetic purposes. Illustrator files are also provided.
 
 # Diversity Input Data
 We are not able to publicly provide all the data necessary to replicate the 

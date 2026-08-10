@@ -227,25 +227,25 @@ RsquareAdj(rda_es)
 # Export RDA tables ------------------------------------------------------------
 
 # Term significance (Table s8.1)
-write.csv(obs_term_anova, file.path(result_dir,"obs_term_anova.csv"))
-write.csv(es_term_anova,file.path(result_dir,"es_term_anova.csv"))
+write.csv(obs_term_anova, file.path(result_dir,"table_s8.1_obs.csv"))
+write.csv(es_term_anova,file.path(result_dir,"table_s8.1es.csv"))
 
 # Eigenvectors (Table s8.2)
-write.csv(obs_important,file.path(result_dir,"obs_important.csv"))
-write.csv(es_important,file.path(result_dir,"es_important.csv"))
+write.csv(obs_important,file.path(result_dir,"table_s8.2obs.csv"))
+write.csv(es_important,file.path(result_dir,"table_s8.2es.csv"))
 
 # Loadings (Table s 8.3-4)
-write.csv(bp_scor_obs,file.path(result_dir,"bp_scor_obs.csv"))
-write.csv(sp_scor_obs,file.path(result_dir,"sp_scor_obs.csv"))
-write.csv(bp_scor_es,file.path(result_dir,"bp_scor_es.csv"))
-write.csv(sp_scor_es,file.path(result_dir,"sp_scor_es.csv"))
+write.csv(bp_scor_obs,file.path(result_dir,"table_s8.3obs.csv"))
+write.csv(sp_scor_obs,file.path(result_dir,"table_s8.4obs.csv"))
+write.csv(bp_scor_es,file.path(result_dir,"table_s8.3es.csv"))
+write.csv(sp_scor_es,file.path(result_dir,"table_s8.4obs.csv"))
 
 
 # RDA plots (Fig. 6)  ----------------------------------------------------------
 
 # Observed plots
 png(
-  filename = file.path(result_dir,"obs_rda_temp.png"),
+  filename = file.path(result_dir,"figure_6ab_temp.png"),
   height = 1600,
   width = 2000)
 par(mar=c(8,8,4,2)+1.2)
@@ -264,7 +264,7 @@ text(rda_obs, display = "bp", col="red", cex = 2.5)
 dev.off()
 
 png(
-  filename = file.path(result_dir,"obs_rda_blank.png"),
+  filename = file.path(result_dir,"figure_6ab_blank.png"),
   height = 1600,
   width = 2000)
 par(mar=c(8,8,4,2)+1.2)
@@ -283,7 +283,7 @@ dev.off()
 
 # es plots
 png(
-  filename = file.path(result_dir,"es_rda_temp.png"),
+  filename = file.path(result_dir,"figure_6de_temp.png"),
   height = 1600,
   width = 2000)
 par(mar=c(8,8,4,2)+1.2)
@@ -302,7 +302,7 @@ text(rda_es, display = "bp", col="red", cex = 2.5)
 dev.off()
 
 png(
-  filename = file.path(result_dir,"es_rda_blank.png"),
+  filename = file.path(result_dir,"figure_6de_blank.png"),
   height = 1600,
   width = 2000)
 par(mar=c(8,8,4,2)+1.2)
@@ -319,6 +319,8 @@ abline(h = 0, v = 0, lwd = 2,lty=5)
 points(rda_es, pch=19, display = "sites",cex = 4,col="darkgrey") 
 dev.off()
 
+# ARROWS AND LABELS ARE DRAWN OVERY TEMPORARY FILE IN ILLUSTRATOR, THEN
+# TEMP PLOT IS REPLACED WITH BLANK PLOT.
   
 # Variance partitioning  -------------------------------------------------------
 
