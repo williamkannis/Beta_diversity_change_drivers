@@ -37,10 +37,10 @@ This repository is separated into two separate analysis routes:
 
 1. Calculation of null model standardized effect sizes
 
-2. Conduct manuscript analyses
+2. Conducting of manuscript analyses
 
 Replicating the analyses from route 1, requires the use of a high performance 
-computer cluster (hpc) to replicate the effect size calculations. We provide
+computer cluster (HPC) to replicate the effect size calculations. We provide
 data, R scripts, and shell scripts to accomplish this task. For those wanting
 to replicate the analyses without high performance computing, we also
 provide intermediate effect size diversity data require to replicate analyses
@@ -55,7 +55,7 @@ independent reproduction of the effect-size calculations and all downstream
 manuscript analyses. Additionally we provide code for community and trait data
 preparation [here](#diversity-input-data), and the beta diversity null modelling 
 workflow used in this manuscript can be found 
-[here](BLANK.
+[here](BLANK).
 
 # Data
 
@@ -115,7 +115,8 @@ downloaded from ```origin_invaded.rds``` at the [Zenodo repository](BLANK) and u
 
 <ins>NOTE:</ins>We are not able to publicly share the raw community data but 
 provided the summarized richness values and r script ```origin_invaded_prep.R``` 
-used to generate the data BLANK
+used to generate the invadedness data. Thiss script can be found in 
+the ```Diversity Input Data``` directory.
 
 
 ## Publically available data
@@ -187,7 +188,7 @@ file structure:
 (*) directories or files downloaded from data sources other than current repository
 ```
 
-<ins>NOTE:</ins> If downloading data from the [Zenodo repository](BLANK, the .zip 
+<ins>NOTE:</ins> If downloading data from the [Zenodo repository](BLANK), the .zip 
 files will create duplicate folders. It is recommended to download all data 
 before creating new file structures.
 
@@ -217,10 +218,10 @@ R packages
 ## Route 1: Calculate effect sizes using HPC
 
 R scripts can be found in ```HPC``` directory and are listed in order of 
-workflow. Users starting here will need to download BLANK.
+workflow. Users starting here do not need to download ```ses_out.zip```.
 
 <ins>NOTE:</ins> Completing this part of workflow requires HPC cluster
-with Slurm interface and downlaoding large files(```null_out.zip```). If this 
+with Slurm interface and downlaoding large files (```null_out.zip```). If this 
 is not possible, skip to [Route 2](#route-2-conduct-analayses-using-local-machine).
 
 ### 1. Upload entire ```HPC``` directory to high performance cluster storage.
@@ -253,7 +254,7 @@ p-values, and p-value based effect sizes (ES), and reports optional diagnostic
 metrics used to select between the two effect size methods. Asymmetrical null 
 distributions should be assessed using empirical p-value based effect sizes 
 rather than z-score based SES. See 
-[Botta-Dukát (2018](https://doi.org/10.1556/168.2018.19.1.8) for more 
+[Botta-Dukát (2018)](https://doi.org/10.1556/168.2018.19.1.8) for more 
 information on selecting SES or p-value based ES.
 
 <ins>Outputs:</ins> 
@@ -277,7 +278,7 @@ zenodo repository
 
 <ins>Purpose:</ins> Compiles and formats the resulting SES, ES, and diagnostic 
 stats across files. Also visualizes normality diagnostics to allow users to 
-decide between SES or ES values for further analyses. Finally, creates plots
+decide between SES or ES values for further analyses, and creates plots
 summarizing raw and effect size beta diversity values.
 
 <ins>Outputs:</ins> 
@@ -331,7 +332,8 @@ HUC6 basin resolution to visualize spatial patterns.
 
 # Diversity Input Data
 We are not able to publicly provide all the data necessary to replicate the 
-multidimensional diversity data estimated using BLANK. 
+multidimensional diversity data estimated using the 
+[HPC null model workflow](BLANK). 
 We do, however, provide the code used to prepare said data and can offer
 data upon completed data requests. See below for more information.
 
@@ -343,7 +345,7 @@ Individuals with completed data requests may contact the corresponding
 author for harmonized versions of the data. 
 
 Trait data were obtained from public and private data sets and harmonized data 
-cannot be shared without permission. Trait data can be found publicly aviable at
+cannot be shared without permission. Trait data can be found publicly available at
 [Frimpong & Angermeier (2009)](https://www.sciencebase.gov/catalog/item/5a7c6e8ce4b00f54eb2318c0),
 and upon request from the authors of 
 [Giam & Olden (2016)](https://doi.org/10.1111/geb.12475).
