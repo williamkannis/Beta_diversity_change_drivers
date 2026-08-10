@@ -25,7 +25,8 @@ library(dplyr)
 library(tidyr)
 
 # Load data
-com_df <- readRDS(file.path(com_dir,"raw_community_diversity_input.rds")) %>% ungroup()
+com_df <- readRDS(file.path(com_dir,"raw_community_diversity_input.rds")) %>% 
+  ungroup()
 
 # Origin-based invadedness -----------------------------------------------------
 inv_df <- com_df %>% 
@@ -34,13 +35,13 @@ inv_df <- com_df %>%
   mutate(
     native_status = case_when(
       Native8 == T ~ "native",  # native to that huc 8
-      Native8 == F & Native2 == T ~ "prov",  # prov species, native to region but not to huc 8
-      Native2 ==F & NativeCon ==T ~ "reg",  # regional species, native continent but not regions
-      NativeCon == F ~ "extr" # extra realm, not native to continent
+      Native8 == F & Native2 == T ~ "prov",  # native to region but not to huc 8
+      Native2 ==F & NativeCon ==T ~ "reg",  # native continent but not regions
+      NativeCon == F ~ "extr" # not native to continent
     )
   )   %>% 
   
-  # Pivot data frame to create columns for the number of each type of speices
+  # Pivot data frame to create columns for the number of each type of species
   group_by(HUC_12,COMID,native_status) %>% 
   summarise(richness = n_distinct(Scientific_Name)) %>%   
   pivot_wider(  
