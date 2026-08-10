@@ -220,8 +220,8 @@ R scripts can be found in ```HPC``` directory and are listed in order of
 workflow. Users starting here will need to download BLANK.
 
 <ins>NOTE:</ins> Completing this part of workflow requires HPC cluster
-with Slurm interface. If this is not possible, skip to 
-[Route 2](#route-2-conduct-analayses-using-local-machine).
+with Slurm interface and downlaoding large files(```null_out.zip```). If this 
+is not possible, skip to [Route 2](#route-2-conduct-analayses-using-local-machine).
 
 ### 1. Upload entire ```HPC``` directory to high performance cluster storage.
 For all steps utilizing HPC clusters, users will run shell scripts that will
@@ -230,19 +230,19 @@ run the respective R script using specified HPC resources.
 ### 2. Prepare effect size input data
 **Scripts:** 
 
-* ```11_beta_null_model_prep.sh``` - ```11_beta_null_model_prep.R```
-* ```12_alpha_null_model_prep.sh``` - ```12_alpha_null_model_prep.R```
+* ```01_beta_null_model_prep.sh``` - ```01_beta_null_model_prep.R```
+* ```02_alpha_null_model_prep.sh``` - ```02_alpha_null_model_prep.R```
 
-<ins>Purpose:</ins> Calculates difference in LCBD  between contemporary and  
-native pools (delta) for the observed values, and for each null iteration.  
+<ins>Purpose:</ins> Calculates difference in LCBD between contemporary and 
+native pools (delta) for the observed values, and for each null iteration. 
 Consolidates outputs into single files, with separate delta, native, and 
 contemporary species pool values.
 
-<ins>Outputs:</ins> Intermediate file used for effect size calculations
+<ins>Outputs:</ins> Intermediate files used for effect size calculations
 
 
 ### 3. Calculate effect sizes
-**Scripts:** ```02_hpc_batch_ses.sh``` - ```02_hpc_batch_ses.R```
+**Scripts:** ```03_batch_ses.sh``` - ```03_batch_ses.R```
 
 <ins>Purpose:</ins> Estimates standardize effect sizes (SES) of each single
 metric using the custom function found in ```00_null_model_effect_size_function.R```.

@@ -1,9 +1,9 @@
 #!/bin/bash
 
-#SBATCH --job-name=ses_batch
-#SBATCH --array=1-26
+#SBATCH --job-name=alpha_null_prep
+#SBATCH --array=1-2
 #SBATCH --cpus-per-task=1
-#SBATCH --mem=22gb
+#SBATCH --mem=10gb
 #SBATCH --time=00:10:00
 #SBATCH --mail-type=ALL
 
@@ -16,4 +16,4 @@ module load proj/9.2.1
 module load sqlite/3.43.2
 
 # Run the task for each index in the job array
-Rscript 02_hpc_batch_ses.R ${SLURM_ARRAY_TASK_ID}
+Rscript 02_alpha_null_model_prep.R ${SLURM_ARRAY_TASK_ID}
