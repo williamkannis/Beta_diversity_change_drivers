@@ -11,7 +11,7 @@ reproduce the analyses, figures, and tables presented in the manuscript.
 The general null-model workflow used to generate the beta-diversity
 metrics is available in the companion repository:
 
-[Beta-diversity null-model workflow](LINK)
+[Beta-diversity null-model workflow](BLANK)
 
 For questions about this data set or analysis, please contact:
 
@@ -55,18 +55,18 @@ independent reproduction of the effect-size calculations and all downstream
 manuscript analyses. Additionally we provide code for community and trait data
 preparation [here](#diversity-input-data), and the beta diversity null modelling 
 workflow used in this manuscript can be found 
-[here]().
+[here](BLANK.
 
 # Data
 
 ## Shared data
-The data below can be found at the manuscript's [Zenodo repository]():
+The data below can be found at the manuscript's [Zenodo repository](BLANK:
 
 > BLANK
 
 ### Observed diversity data
 Observed alpha and beta diversity data can be downloaded from ```obs_out.zip``` 
-at the [Zenodo repository]() and unzipped into ```HPC_data/``` directory. 
+at the [Zenodo repository](BLANK) and unzipped into ```HPC_data/``` directory. 
 These data are used to estimate null model empirical effect sizes, used in 
 analyses, and used for summary statistics. 
 
@@ -74,7 +74,7 @@ analyses, and used for summary statistics.
 
 ### Null diversity iterations
 The raw null model iteration data for beta and alpha diversity can be downloaded 
-from ```null_out.zip``` at the [Zenodo repository]() and unzipped into 
+from ```null_out.zip``` at the [Zenodo repository](BLANK) and unzipped into 
 the ```HPC_data/``` directory. These data are the result of the randomization of 
 traits and phylogenies (beta) or randomization of communities (alpha). These 
 data will be compiled and used to create null distributions used to create null 
@@ -84,18 +84,19 @@ model standardized diversity values.
 
 ### Summarized null model outputs
 The summarized null model analyses results for all diversity metrics can be 
-downloaded from ```ses_out.zip``` at the [Zenodo repository]() 
-and unzipped into the ```HPC_data/``` directory. These data are used to evaluate 
-the properties of the null distributions to choose between standardized effect 
-sizes and empirical effect sizes, and can be merged together for plotting and 
-to create the final data.frames for the use in analyses.
+downloaded from ```ses_out.zip``` at the [Zenodo repository](BLANK) 
+and unzipped into the ```HPC_data/``` directory. These data contain effect sizes,
+can be used to evaluate the properties of the null distributions to choose 
+between standardized effect  sizes and empirical effect sizes, and can be 
+merged together for plotting and to create the final data.frames for the use in 
+analyses.
 
 **Required** only for route 2.
 
 ### Diversity Output Data
 The combined observed and summarized effect size data for native alpha, native 
 LCBD, and delta LCBD can be downloaded from ```Diversity Output Data.zip``` 
-at the [Zenodo repository]() and unzipped into the working directory. These 
+at the [Zenodo repository](BLANK) and unzipped into the working directory. These 
 data can be used to replicate the spatial, redundancy, and variance 
 partitioning analyses. Contains both response and explanatory variables.
 
@@ -108,7 +109,7 @@ geographic origins on changes in LCBD. We used the raw community data estimated
 total species richness, native species richness, and the richness of three 
 classes of nonnative species using origin-base definitions introduced by 
 [Thompson et al., (2025)](https://doi.org/10.1111/geb.13951). These data can be 
-downloaded from ```origin_invaded.rds``` at the [Zenodo repository]() and unzipped into ```analysis_data/```.
+downloaded from ```origin_invaded.rds``` at the [Zenodo repository](BLANK) and unzipped into ```analysis_data/```.
 
 **Required** for both route 1 and route 2.
 
@@ -158,7 +159,7 @@ Only **Required** for replication of spatial plots.
 
 ## File directories
 Download the entire repository. Then download required data from 
-[Zenodo Repository](), and data sources listed 
+[Zenodo Repository](BLANK), and data sources listed 
 [here](#publically-available-data), and unzip into the following 
 file structure:
 
@@ -186,7 +187,7 @@ file structure:
 (*) directories or files downloaded from data sources other than current repository
 ```
 
-<ins>NOTE:</ins> If downloading data from the [Zenodo respository](), the .zip 
+<ins>NOTE:</ins> If downloading data from the [Zenodo repository](BLANK, the .zip 
 files will create duplicate folders. It is recommended to download all data 
 before creating new file structures.
 
@@ -223,6 +224,8 @@ with Slurm interface. If this is not possible, skip to
 [Route 2](#route-2-conduct-analayses-using-local-machine).
 
 ### 1. Upload entire ```HPC``` directory to high performance cluster storage.
+For all steps utilizing HPC clusters, users will run shell scripts that will
+run the respective R script using specified HPC resources.
 
 ### 2. Prepare effect size input data
 **Scripts:** 
@@ -230,50 +233,32 @@ with Slurm interface. If this is not possible, skip to
 * ```11_beta_null_model_prep.sh``` - ```11_beta_null_model_prep.R```
 * ```12_alpha_null_model_prep.sh``` - ```12_alpha_null_model_prep.R```
 
-<ins>Purpose:</ins> X
-<ins>Inputs:</ins> X
-<ins>Outputs:</ins> X
+<ins>Purpose:</ins> Calculates difference in LCBD  between contemporary and  
+native pools (delta) for the observed values, and for each null iteration.  
+Consolidates outputs into single files, with separate delta, native, and 
+contemporary species pool values.
 
-Observed and null model outputs were exported in multiple files, reflecting the 
-multi-nodal processing. We need to consolidate these files into single files 
-that contain a list of each null iteration.  The below shell scripts run their 
-respective R script to consolidate null model outputs into single files, 
-separate native and contemporary species pool values, estimate the difference 
-in diversity between contemporary and native pools (delta), and export a single 
-file for each diversity metric (i.e., alpha, total beta, replacement, richness 
-difference, LCBD) for the contemporary species pool, native only species pool, 
-and delta values.
+<ins>Outputs:</ins> Intermediate file used for effect size calculations
+
 
 ### 3. Calculate effect sizes
-**Scripts:** ```13_batch_ses.sh``` - ```13_batch_ses.R```
+**Scripts:** ```02_hpc_batch_ses.sh``` - ```02_hpc_batch_ses.R```
 
-<ins>Purpose:</ins> X
-<ins>Inputs:</ins> X
-<ins>Outputs:</ins> X
+<ins>Purpose:</ins> Estimates standardize effect sizes (SES) of each single
+metric using the custom function found in ```00_null_model_effect_size_function.R```.
 
-The lists from the functions above contain the observed values and a list of 
-null iterations for each metric and species pool. The next shell script will run 
-the respective R script, which estimates standardize effect sizes (SES) of each 
-single metric. This step involves calling in a SES function created for this 
-project: ```00_null_model_effect_size_function.R```. This function is flexible 
-and takes a range of input formats such as dataframes, vectors, matrices, and 
-distance objects, and maintains this format in the exported values. The 
-function estimates standardize effect sizes in the traditional z score method 
-(SES). Additionally empirical p-values, and p-value based effect sizes (ES) are 
-calculated. Finally the function reports optional diagnostic metric to assess 
-if null distributions are symmetrical and normal. asymmetrical null 
+This function summarizes null distributions and calculates 
+standardize effect sizes in the traditional z score method (SES), empirical 
+p-values, and p-value based effect sizes (ES), and reports optional diagnostic 
+metrics used to select between the two effect size methods. Asymmetrical null 
 distributions should be assessed using empirical p-value based effect sizes 
 rather than z-score based SES. See 
 [Botta-Dukát (2018](https://doi.org/10.1556/168.2018.19.1.8) for more 
 information on selecting SES or p-value based ES.
 
-### Effect size function
-**Script:** ```00_null_model_effect_size_function.R```
+<ins>Outputs:</ins> 
 
-<ins>Purpose:</ins> Function to summarize null distributions and calculates 
-standardize effect sizes in the traditional z score method (SES), empirical 
-p-values, and p-value based effect sizes (ES), and reports optional diagnostic 
-metrics.
+* [Summarized null model outputs](#summarized-null-model-outputs)
 
 
 ### 3. Download the entire ```HPC``` directory to local machine.
@@ -353,8 +338,8 @@ data upon completed data requests. See below for more information.
 The fish occurrence data were obtained through data sharing agreements 
 with United States governmental agencies. While these raw data are not directly 
 available from the authors for redistribution due to data sharing agreements, 
-they can be accessed through formal requests to the agencies listed in Appendix 
-1. Individuals with completed data requests may contact the corresponding 
+they can be accessed through formal requests to the agencies listed in Appendix 1. 
+Individuals with completed data requests may contact the corresponding 
 author for harmonized versions of the data. 
 
 Trait data were obtained from public and private data sets and harmonized data 
@@ -371,5 +356,5 @@ analyis ```filtered_species_list.csv```.
 These scripts and data can be found in the ```Diversity Input Data``` directory.
 
 The phylogentic tree used for multidimensional diversity metrics, and 
-information on its methodology can be found {here}()
+information on its methodology can be found [here](BLANK)
 
