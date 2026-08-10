@@ -18,7 +18,7 @@ rm(list = ls())
 # Directories
 beta_dir <- "Diversity Output Data"
 pred_dir <- "Analysis_data"
-export_dir <- "Results"
+export_dir <- "Figures"
 
 # Load packages
 library(sf)

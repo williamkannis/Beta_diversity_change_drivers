@@ -21,7 +21,7 @@ rm(list = ls())
 # Directories
 beta_dir <- "Diversity Output Data"
 pred_dir <- "Analysis_data"
-result_dir <- "Results"
+result_dir <- "Figures"
 
 # Load packages
 library(tidyverse)  # maybe replace with ind pacakges

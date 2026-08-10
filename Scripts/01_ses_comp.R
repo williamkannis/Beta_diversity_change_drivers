@@ -18,7 +18,7 @@ rm(list=ls())
 out_dir <- "HPC/ses_outputs"
 obs_dir <- "HPC/obs_outputs"
 export_dir <- "Diversity Output Data"
-fig_dir <- "Results"
+fig_dir <- "Figures"
 
 # Packages
 library(dplyr)
