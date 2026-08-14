@@ -4,8 +4,8 @@
 
 Code and data for reproducing the analyses presented in:
 
-> Author et al. (YEAR). [Manuscript title].
-> [Journal, DOI]
+> Author et al. (YEAR). Null models reveal differing drivers of multidimensional 
+>beta diversity change in invaded metacommunities.[Journal, DOI]
 
 This repository contains the R code and data products required to
 reproduce the analyses, figures, and tables presented in the manuscript.
@@ -13,7 +13,7 @@ reproduce the analyses, figures, and tables presented in the manuscript.
 The general null-model workflow used to generate the beta-diversity
 metrics is available in the companion repository:
 
-[Beta diversity null-model workflow](BLANK)
+[Beta diversity null-model workflow](https://anonymous.4open.science/r/beta_null_hpc-6490/README.md)
 
 For questions about this data set or analysis, please contact:
 
@@ -57,7 +57,7 @@ independent reproduction of the effect-size calculations and all downstream
 manuscript analyses. Additionally we provide code for community and trait data
 preparation [here](#diversity-input-data), and the beta diversity null modelling 
 workflow used in this manuscript can be found 
-[here](BLANK).
+[here](https://anonymous.4open.science/r/beta_null_hpc-6490/README.md).
 
 # Data
 
@@ -340,7 +340,7 @@ or Qgis for aesthetic purposes. Illustrator files are also provided.
 # Diversity Input Data
 We are not able to publicly provide all the data necessary to replicate the 
 multidimensional diversity data estimated using the 
-[HPC null model workflow](BLANK). 
+[HPC null model workflow](https://anonymous.4open.science/r/beta_null_hpc-6490/README.md). 
 We do, however, provide the code used to prepare said data and can offer
 data upon completed data requests. See below for more information.
 
@@ -365,5 +365,5 @@ analyis ```filtered_species_list.csv```.
 These scripts and data can be found in the ```Diversity Input Data``` directory.
 
 The phylogenetic tree used for multidimensional diversity metrics, and 
-information on its methodology can be found [here](BLANK).
+information on its methodology can be found [here](https://anonymous.4open.science/r/fishscales_super_tree-01FC/README.md).
 
