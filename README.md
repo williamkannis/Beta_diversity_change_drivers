@@ -27,7 +27,8 @@ OrcID: 0009-0003-3541-8503
 
 If you use this code or data, please cite:
 
-[Manuscript citation]
+BLANK. Null models reveal differing drivers of multidimensional 
+beta diversity change in invaded metacommunities. in review
 
 and, where appropriate:
 
@@ -62,13 +63,13 @@ workflow used in this manuscript can be found
 # Data
 
 ## Shared data
-The data below can be found at the manuscript's [Zenodo repository](BLANK:
+The data below can be found at the manuscript's [Zenodo repository](https://doi.org/10.5281/zenodo.16949657):
 
 > BLANK
 
 ### Observed diversity data
 Observed alpha and beta diversity data can be downloaded from ```obs_out.zip``` 
-at the [Zenodo repository](BLANK) and unzipped into ```HPC_data/``` directory. 
+at the [Zenodo repository](https://doi.org/10.5281/zenodo.16949657) and unzipped into ```HPC_data/``` directory. 
 These data are used to estimate null model empirical effect sizes, used in 
 analyses, and used for summary statistics. 
 
@@ -76,7 +77,7 @@ analyses, and used for summary statistics.
 
 ### Null diversity iterations
 The raw null model iteration data for beta and alpha diversity can be downloaded 
-from ```null_out.zip``` at the [Zenodo repository](BLANK) and unzipped into 
+from ```null_out.zip``` at the [Zenodo repository](https://doi.org/10.5281/zenodo.16949657) and unzipped into 
 the ```HPC_data/``` directory. These data are the result of the randomization of 
 traits and phylogenies (beta) or randomization of communities (alpha). These 
 data will be compiled and used to create null distributions used to create null 
@@ -86,7 +87,7 @@ model standardized diversity values.
 
 ### Summarized null model outputs
 The summarized null model analyses results for all diversity metrics can be 
-downloaded from ```ses_out.zip``` at the [Zenodo repository](BLANK) 
+downloaded from ```ses_out.zip``` at the [Zenodo repository](https://doi.org/10.5281/zenodo.16949657) 
 and unzipped into the ```HPC_data/``` directory. These data contain effect sizes,
 can be used to evaluate the properties of the null distributions to choose 
 between standardized effect  sizes and empirical effect sizes, and can be 
@@ -98,7 +99,7 @@ analyses.
 ### Diversity Output Data
 The combined observed and summarized effect size data for native alpha, native 
 LCBD, and delta LCBD can be downloaded from ```Diversity Output Data.zip``` 
-at the [Zenodo repository](BLANK) and unzipped into the working directory. These 
+at the [Zenodo repository](https://doi.org/10.5281/zenodo.16949657) and unzipped into the working directory. These 
 data can be used to replicate the spatial, redundancy, and variance 
 partitioning analyses. Contains both response and explanatory variables.
 
@@ -111,7 +112,7 @@ geographic origins on changes in LCBD. We used the raw community data estimated
 total species richness, native species richness, and the richness of three 
 classes of nonnative species using origin-base definitions introduced by 
 [Thompson et al., (2025)](https://doi.org/10.1111/geb.13951). These data can be 
-downloaded from ```origin_invaded.rds``` at the [Zenodo repository](BLANK) 
+downloaded from ```origin_invaded.rds``` at the [Zenodo repository](https://doi.org/10.5281/zenodo.16949657) 
 and unzipped into ```analysis_data/```.
 
 **Required** for both route 1 and route 2.
@@ -163,7 +164,7 @@ Only **Required** for replication of spatial plots.
 
 ## File directories
 Download the entire repository. Then download required data from 
-[Zenodo Repository](BLANK), and data sources listed 
+[Zenodo Repository](https://doi.org/10.5281/zenodo.16949657), and data sources listed 
 [here](#publically-available-data), and unzip into the following 
 file structure:
 
@@ -191,7 +192,7 @@ file structure:
 (*) directories or files downloaded from data sources other than current repository
 ```
 
-<ins>NOTE:</ins> When downloading data from the [Zenodo repository](BLANK), the .zip 
+<ins>NOTE:</ins> When downloading data from the [Zenodo repository](https://doi.org/10.5281/zenodo.16949657), the .zip 
 files will create duplicate folders. It is recommended to download all data 
 before creating new file structures.
 
