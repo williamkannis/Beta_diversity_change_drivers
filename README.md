@@ -30,9 +30,12 @@ If you use this code or data, please cite:
 BLANK. Null models reveal differing drivers of multidimensional 
 beta diversity change in invaded metacommunities. in review
 
-and, where appropriate:
+DATA CITATION
 
-[Workflow citation / DOI]
+and if you adapt the null model workflow:
+
+BLANK. Beta diversity change null modelling workflow for high performance computer 
+(HPC) clusters. [Workflow citation / DOI]
 
 
 # Overview
@@ -64,8 +67,6 @@ workflow used in this manuscript can be found
 
 ## Shared data
 The data below can be found at the manuscript's [Zenodo repository](https://doi.org/10.5281/zenodo.16949657):
-
-> BLANK
 
 ### Observed diversity data
 Observed alpha and beta diversity data can be downloaded from ```obs_out.zip``` 
