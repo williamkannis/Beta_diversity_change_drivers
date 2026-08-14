@@ -220,7 +220,7 @@ R packages
 
 ## Route 1: Calculate effect sizes using HPC
 
-R scripts can be found in ```HPC``` directory and are listed in order of 
+R and shell scripts can be found in ```HPC``` directory and are listed in order of 
 workflow. Users starting here do not need to download ```ses_out.zip```.
 
 <ins>NOTE:</ins> Completing this part of workflow requires HPC cluster
