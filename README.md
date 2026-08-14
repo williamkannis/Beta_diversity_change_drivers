@@ -1,4 +1,6 @@
-# Source code for "Drivers of multifaceted beta diversity change in invaded stream fish communities""
+# Source code for "Null models reveal differing drivers of multidimensional beta diversity change in invaded metacommunities"
+
+# Anonymous peer review version
 
 Code and data for reproducing the analyses presented in:
 
@@ -11,7 +13,7 @@ reproduce the analyses, figures, and tables presented in the manuscript.
 The general null-model workflow used to generate the beta-diversity
 metrics is available in the companion repository:
 
-[Beta-diversity null-model workflow](BLANK)
+[Beta diversity null-model workflow](BLANK)
 
 For questions about this data set or analysis, please contact:
 
@@ -109,13 +111,14 @@ geographic origins on changes in LCBD. We used the raw community data estimated
 total species richness, native species richness, and the richness of three 
 classes of nonnative species using origin-base definitions introduced by 
 [Thompson et al., (2025)](https://doi.org/10.1111/geb.13951). These data can be 
-downloaded from ```origin_invaded.rds``` at the [Zenodo repository](BLANK) and unzipped into ```analysis_data/```.
+downloaded from ```origin_invaded.rds``` at the [Zenodo repository](BLANK) 
+and unzipped into ```analysis_data/```.
 
 **Required** for both route 1 and route 2.
 
 <ins>NOTE:</ins>We are not able to publicly share the raw community data but 
 provided the summarized richness values and r script ```origin_invaded_prep.R``` 
-used to generate the invadedness data. Thiss script can be found in 
+used to generate the invadedness data. This script can be found in 
 the ```Diversity Input Data``` directory.
 
 
@@ -188,7 +191,7 @@ file structure:
 (*) directories or files downloaded from data sources other than current repository
 ```
 
-<ins>NOTE:</ins> If downloading data from the [Zenodo repository](BLANK), the .zip 
+<ins>NOTE:</ins> When downloading data from the [Zenodo repository](BLANK), the .zip 
 files will create duplicate folders. It is recommended to download all data 
 before creating new file structures.
 
@@ -270,7 +273,7 @@ information on selecting SES or p-value based ES.
 
 R scripts can be found in ```Scripts``` directory and are listed in order of 
 workflow. Users starting here do not need to download ```null_out.zip``` from
-zenodo repository
+Zenodo repository
 
 
 ### 1. Summarize null model results
@@ -332,7 +335,7 @@ HUC6 basin resolution to visualize spatial patterns.
 # Figures
 Contains raw R plots and .csv tables used to create the figures and tables in 
 the main manuscript and appendices. Most figures were edited in Adobe Illustrator
-or Qgis for strictly aesthetic purposes. Illustrator files are also provided.
+or Qgis for aesthetic purposes. Illustrator files are also provided.
 
 # Diversity Input Data
 We are not able to publicly provide all the data necessary to replicate the 
@@ -361,6 +364,6 @@ entire data set ```full_species_list.csv```, and species list for the
 analyis ```filtered_species_list.csv```.
 These scripts and data can be found in the ```Diversity Input Data``` directory.
 
-The phylogentic tree used for multidimensional diversity metrics, and 
-information on its methodology can be found [here](BLANK)
+The phylogenetic tree used for multidimensional diversity metrics, and 
+information on its methodology can be found [here](BLANK).
 
