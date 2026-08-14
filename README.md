@@ -30,8 +30,8 @@ If you use this code or data, please cite:
 >BLANK. Null models reveal differing drivers of multidimensional 
 >beta diversity change in invaded metacommunities. in review
 
->BLANK. Data for Null models reveal differing drivers of multidimensional beta 
->diversity change in invaded metacommunities.[Workflow citation / DOI]
+>BLANK. Data and code for Null models reveal differing drivers of multidimensional beta 
+>diversity change in invaded metacommunities.[citation / DOI]
 
 and if you adapt the null model workflow:
 
