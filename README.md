@@ -27,15 +27,16 @@ OrcID: 0009-0003-3541-8503
 
 If you use this code or data, please cite:
 
-BLANK. Null models reveal differing drivers of multidimensional 
-beta diversity change in invaded metacommunities. in review
+>BLANK. Null models reveal differing drivers of multidimensional 
+>beta diversity change in invaded metacommunities. in review
 
-DATA CITATION
+>BLANK. Data for Null models reveal differing drivers of multidimensional beta 
+>diversity change in invaded metacommunities.[Workflow citation / DOI]
 
 and if you adapt the null model workflow:
 
-BLANK. Beta diversity change null modelling workflow for high performance computer 
-(HPC) clusters. [Workflow citation / DOI]
+>BLANK. Beta diversity change null modelling workflow for high performance computer 
+>(HPC) clusters. [Workflow citation / DOI]
 
 
 # Overview
