@@ -10,11 +10,11 @@
 
 # Description: Prepares null and observed values for each diversity metric into
 # format that can be easily summarized. Null model files are compiled into one,
-# and change (delta) between contemporary and native species pool is calculated for
-# observed and each null iteration. Each metric (total, replacement,lcbd, etc.) is
-# exported as a single file for batch processing. This script is for use on
-# a HPC cluster and import functional or taxonomic diversity values based on
-# shell script argument.
+# and change (delta) between contemporary and native species pool is calculated 
+# for observed and each null iteration. Each metric (total, replacement,lcbd, 
+# etc.) is exported as a single file for batch processing. This script is for  
+# use on a HPC cluster and import functional or phylogenetic diversity values  
+# based on shell script argument.
 
 # House keeping  ---------------------------------------------------------------
 rm(list = ls())
@@ -25,9 +25,9 @@ library(purrr)
 library(parallel)
 
 # Directories
-obs_dir <- "obs_out"
-null_dir <- "null_out"
-out_dir <- "ses_inputs"
+obs_dir <- "HPC/obs_out"
+null_dir <- "HPC/null_out"
+out_dir <- "HPC/ses_inputs"
 
 # Load in data  ----------------------------------------------------------------
 

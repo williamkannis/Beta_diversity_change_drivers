@@ -16,4 +16,4 @@ module load proj/9.2.1
 module load sqlite/3.43.2
 
 # Run the task for each index in the job array
-Rscript 02_alpha_null_model_prep.R ${SLURM_ARRAY_TASK_ID}
+Rscript HPC/02_alpha_null_model_prep.R ${SLURM_ARRAY_TASK_ID}
