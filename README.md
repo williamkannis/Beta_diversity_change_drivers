@@ -35,8 +35,8 @@ If you use this code or data, please cite:
 
 and if you adapt the null model workflow:
 
->BLANK. Beta diversity change null modelling workflow for high performance computer 
->(HPC) clusters. [Workflow citation / DOI]
+>BLANK. Beta diversity change null modelling workflow for Slurm-based high 
+>performance computer (HPC) clusters. [Workflow citation / DOI]
 
 
 # Overview
