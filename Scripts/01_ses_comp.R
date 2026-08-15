@@ -405,7 +405,7 @@ plot_dat_es <- d_lcbd %>%
 
 # Open PNG device
 png(
-  filename = file.path(fig_dir,"figures_6.1.png"),
+  filename = file.path(fig_dir,"figure_s6.1.png"),
   width = 10,
   height = 10,
   units = "in",
@@ -434,7 +434,7 @@ dev.off()
 
 # Open PNG device
 png(
-  filename = file.path(fig_dir,"figures_6.2.png"),
+  filename = file.path(fig_dir,"figure_s6.2.png"),
   width = 10,
   height = 10,
   units = "in",
