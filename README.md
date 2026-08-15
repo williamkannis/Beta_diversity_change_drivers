@@ -110,7 +110,7 @@ workflows of route 1 or route 2.
 
 ### Origin-based invadedness
 We estimated the effects community invadedness by nonnative species of different 
-geographic origins on changes in LCBD. We used the raw community data estimated 
+geographic origins on changes in LCBD. We used the raw community data to estimate 
 total species richness, native species richness, and the richness of three 
 classes of nonnative species using origin-base definitions introduced by 
 [Thompson et al., (2025)](https://doi.org/10.1111/geb.13951). These data can be 
@@ -180,9 +180,6 @@ file structure:
 ├── Diversity Output Data*
 ├── Figures
 ├── HPC
-│   ├── 00_null_model_effect_size_function.R
-│   ├── 01_ses_batch.sh
-│   ├── 01_ses_batch.R 
 │   │── null_out*
 │   │── obs_out*
 │   │── ses_inputs
@@ -208,7 +205,7 @@ before creating new file structures.
 R packages
 
 * ```'DescTools'``` version: 0.99.60
-* ```'dplyr'``` version: 1.1.4
+* ```'dplyr'``` version:1.1.4
 * ```'ggplot2'``` version: 4.0.2
 * ```'matrixStats'``` version: 1.5.0
 * ```'parallel'``` version: 4.5.0
@@ -227,7 +224,7 @@ R and shell scripts can be found in ```HPC``` directory and are listed in order 
 workflow. Users starting here do not need to download ```ses_out.zip```.
 
 <ins>NOTE:</ins> Completing this part of workflow requires HPC cluster
-with Slurm interface and downlaoding large files (```null_out.zip```). If this 
+with Slurm interface and downloading large files (```null_out.zip```). If this 
 is not possible, skip to [Route 2](#route-2-conduct-analayses-using-local-machine).
 
 ### 1. Upload entire ```HPC``` directory to high performance cluster storage.
