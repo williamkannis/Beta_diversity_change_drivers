@@ -66,4 +66,40 @@ inv_df <- com_df %>%
 # Export for summary stats script
 saveRDS(inv_df,file.path(pred_dir,"origin_invaded.rds"))
 
+# Nonnative species tables -----------------------------------------------------
+
+# tables of species by nonnative origin, and number of sites they occupy as
+# that type of nonnative species
+nn_table_df <- com_df %>% 
+  mutate(
+    native_status = case_when(
+      Native8 == T ~ "native",  
+      Native8 == F & Native2 == T ~ "prov",  
+      Native2 ==F & NativeCon ==T ~ "reg",  
+      NativeCon == F ~ "extr" 
+    )
+  ) 
+
+# extra-realm species
+sp_summary_exotic <- nn_table_df %>%   
+  filter(native_status == "extr") %>% 
+  group_by(Scientific_Name) %>% 
+  summarise(n_sites = n()) %>% 
+  mutate(prop_sites = n_sites/1023)
+
+# Regional
+sp_summary_reg <- nn_table_df %>%   
+  filter(native_status == "reg") %>% 
+  group_by(Scientific_Name) %>% 
+  summarise(n_sites = n())%>% 
+  mutate(prop_sites = n_sites/1023)
+
+# Provincial
+sp_summary_tran <- nn_table_df %>%   
+  filter(native_status == "prov") %>% 
+  group_by(Scientific_Name) %>% 
+  summarise(n_sites = n())%>% 
+  mutate(prop_sites = n_sites/1023)
+
+
 
