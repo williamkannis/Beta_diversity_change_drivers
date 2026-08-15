@@ -308,7 +308,6 @@ analysis (RDA) of multidimensional changes in LCBD.
 * Data.frame containing nonnative origin-based invadedness, 
 propagule pressure, abiotic habitat characteristics, habitat alteration, and 
 native diversity metrics.
-* Community invadedness summary tables for Appendix 7
 
 
 ### 3. Redundancy analysis
