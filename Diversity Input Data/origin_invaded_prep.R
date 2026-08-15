@@ -100,6 +100,3 @@ sp_summary_tran <- nn_table_df %>%
   group_by(Scientific_Name) %>% 
   summarise(n_sites = n())%>% 
   mutate(prop_sites = n_sites/1023)
-
-
-
