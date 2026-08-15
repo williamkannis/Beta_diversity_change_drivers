@@ -364,7 +364,7 @@ Despite not being able to share all data, we provide R scripts used
 to harmonize the community ```community_data_prep.R``` and 
 trait data ```trait_data_prep.R```, as well as the list of species of the 
 entire data set ```full_species_list.csv```, and species list for the 
-analyis ```filtered_species_list.csv```.
+analysis ```filtered_species_list.csv```.
 These scripts and data can be found in the ```Diversity Input Data``` directory.
 
 The phylogenetic tree used for multidimensional diversity metrics, and 
