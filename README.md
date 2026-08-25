@@ -32,8 +32,8 @@ models reveal differing drivers of multidimensional beta diversity change in
 invaded metacommunities. *Diversity and Distributions*. Accepted for publication.
 
 >Annis, W.K., Thompson, L.M., Bower, L.M., Midway, S.M., Peoples, B.K. (2026). 
-Data for Null models reveal differing drivers of multidimensional beta diversity 
-change in invaded metacommunities (Version 1.0.0) [Dataset]. Zenodo. [https://doi.org/10.5281/zenodo.22101663](https://doi.org/10.5281/zenodo.22101663)
+Data for "Null models reveal differing drivers of multidimensional beta diversity 
+change in invaded metacommunities" (Version 1.0.0) [Dataset]. Zenodo. [https://doi.org/10.5281/zenodo.22101663](https://doi.org/10.5281/zenodo.22101663)
 
 
 and if you adapt the null model workflow:
@@ -72,7 +72,10 @@ workflow used in this manuscript can be found
 # Data
 
 ## Shared data
-The data below can be found at the manuscript's [Zenodo repository](https://doi.org/10.5281/zenodo.22101663):
+The data below can be found at the manuscript's Zenodo repository:
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22101663.svg)](https://doi.org/10.5281/zenodo.22101663)
+
 
 ### Observed diversity data
 Observed alpha and beta diversity data can be downloaded from ```obs_out.zip``` 
