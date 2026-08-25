@@ -1,11 +1,11 @@
 # Source code for "Null models reveal differing drivers of multidimensional beta diversity change in invaded metacommunities"
 
-# Anonymous peer review version
 
 Code and data for reproducing the analyses presented in:
 
-> Author et al. (YEAR). Null models reveal differing drivers of multidimensional 
->beta diversity change in invaded metacommunities.[Journal, DOI]
+> Annis et al. (2026). Null models reveal differing drivers of multidimensional 
+>beta diversity change in invaded metacommunities.*Diversity and Distributions*. 
+Accepted for publication.
 
 This repository contains the R code and data products required to
 reproduce the analyses, figures, and tables presented in the manuscript.
@@ -13,7 +13,7 @@ reproduce the analyses, figures, and tables presented in the manuscript.
 The general null-model workflow used to generate the beta-diversity
 metrics is available in the companion repository:
 
-[Beta diversity null-model workflow](https://anonymous.4open.science/r/beta_null_hpc-6490/README.md)
+[Beta diversity null-model workflow](https://github.com/williamkannis/beta_null_hpc.git)
 
 For questions about this data set or analysis, please contact:
 
@@ -27,16 +27,21 @@ OrcID: 0009-0003-3541-8503
 
 If you use this code or data, please cite:
 
->BLANK. Null models reveal differing drivers of multidimensional 
->beta diversity change in invaded metacommunities. in review
+>Annis, W.K., Thompson, L.M., Bower, L.M., Midway, S.M., Peoples, B.K. (2026). Null 
+models reveal differing drivers of multidimensional beta diversity change in 
+invaded metacommunities. *Diversity and Distributions*. Accepted for publication.
 
->BLANK. Data and code for Null models reveal differing drivers of multidimensional beta 
->diversity change in invaded metacommunities.[citation / DOI]
+>Annis, W.K., Thompson, L.M., Bower, L.M., Midway, S.M., Peoples, B.K. (2026). 
+Data for Null models reveal differing drivers of multidimensional beta diversity 
+change in invaded metacommunities (Version 1.0.0) [Dataset]. Zenodo. [https://doi.org/10.5281/zenodo.22101663](https://doi.org/10.5281/zenodo.22101663)
+
 
 and if you adapt the null model workflow:
 
->BLANK. Beta diversity change null modelling workflow for Slurm-based high 
->performance computer (HPC) clusters. [Workflow citation / DOI]
+>Annis, W.K., Thompson, L.M., Bower, L.M., Midway, S.M., Olden, J.D., Peoples, 
+B.K. (2026). Beta diversity change null modelling workflow for Slurm-based high 
+performance computer (HPC) clusters (Version v1.0.0) [Computer software]. 
+Zenodo. [https://doi.org/10.5281/zenodo.22101306](https://doi.org/10.5281/zenodo.22101306)
 
 
 # Overview
@@ -67,11 +72,11 @@ workflow used in this manuscript can be found
 # Data
 
 ## Shared data
-The data below can be found at the manuscript's [Zenodo repository](https://doi.org/10.5281/zenodo.16949657):
+The data below can be found at the manuscript's [Zenodo repository](https://doi.org/10.5281/zenodo.22101663):
 
 ### Observed diversity data
 Observed alpha and beta diversity data can be downloaded from ```obs_out.zip``` 
-at the [Zenodo repository](https://doi.org/10.5281/zenodo.16949657) and unzipped into ```HPC_data/``` directory. 
+at the [Zenodo repository](https://doi.org/10.5281/zenodo.22101663) and unzipped into ```HPC_data/``` directory. 
 These data are used to estimate null model empirical effect sizes, used in 
 analyses, and used for summary statistics. 
 
@@ -79,7 +84,7 @@ analyses, and used for summary statistics.
 
 ### Null diversity iterations
 The raw null model iteration data for beta and alpha diversity can be downloaded 
-from ```null_out.zip``` at the [Zenodo repository](https://doi.org/10.5281/zenodo.16949657) and unzipped into 
+from ```null_out.zip``` at the [Zenodo repository](https://doi.org/10.5281/zenodo.22101663) and unzipped into 
 the ```HPC_data/``` directory. These data are the result of the randomization of 
 traits and phylogenies (beta) or randomization of communities (alpha). These 
 data will be compiled and used to create null distributions used to create null 
@@ -89,7 +94,7 @@ model standardized diversity values.
 
 ### Summarized null model outputs
 The summarized null model analyses results for all diversity metrics can be 
-downloaded from ```ses_out.zip``` at the [Zenodo repository](https://doi.org/10.5281/zenodo.16949657) 
+downloaded from ```ses_out.zip``` at the [Zenodo repository](https://doi.org/10.5281/zenodo.22101663) 
 and unzipped into the ```HPC_data/``` directory. These data contain effect sizes,
 can be used to evaluate the properties of the null distributions to choose 
 between standardized effect  sizes and empirical effect sizes, and can be 
@@ -101,7 +106,7 @@ analyses.
 ### Diversity Output Data
 The combined observed and summarized effect size data for native alpha, native 
 LCBD, and delta LCBD can be downloaded from ```Diversity Output Data.zip``` 
-at the [Zenodo repository](https://doi.org/10.5281/zenodo.16949657) and unzipped into the working directory. These 
+at the [Zenodo repository](https://doi.org/10.5281/zenodo.22101663) and unzipped into the working directory. These 
 data can be used to replicate the spatial, redundancy, and variance 
 partitioning analyses. Contains both response and explanatory variables.
 
@@ -114,7 +119,7 @@ geographic origins on changes in LCBD. We used the raw community data to estimat
 total species richness, native species richness, and the richness of three 
 classes of nonnative species using origin-base definitions introduced by 
 [Thompson et al., (2025)](https://doi.org/10.1111/geb.13951). These data can be 
-downloaded from ```origin_invaded.rds``` at the [Zenodo repository](https://doi.org/10.5281/zenodo.16949657) 
+downloaded from ```origin_invaded.rds``` at the [Zenodo repository](https://doi.org/10.5281/zenodo.22101663) 
 and unzipped into ```analysis_data/```.
 
 **Required** for both route 1 and route 2.
@@ -166,7 +171,7 @@ Only **Required** for replication of spatial plots.
 
 ## File directories
 Download the entire repository. Then download required data from 
-[Zenodo Repository](https://doi.org/10.5281/zenodo.16949657), and data sources listed 
+[Zenodo Repository](https://doi.org/10.5281/zenodo.22101663), and data sources listed 
 [here](#publically-available-data), and unzip into the following 
 file structure:
 
@@ -191,7 +196,7 @@ file structure:
 (*) directories or files downloaded from data sources other than current repository
 ```
 
-<ins>NOTE:</ins> When downloading data from the [Zenodo repository](https://doi.org/10.5281/zenodo.16949657), the .zip 
+<ins>NOTE:</ins> When downloading data from the [Zenodo repository](https://doi.org/10.5281/zenodo.22101663), the .zip 
 files will create duplicate folders. It is recommended to download all data 
 before creating new file structures.
 
@@ -339,7 +344,7 @@ or Qgis for aesthetic purposes. Illustrator files are also provided.
 # Diversity Input Data
 We are not able to publicly provide all the data necessary to replicate the 
 multidimensional diversity data estimated using the 
-[HPC null model workflow](https://anonymous.4open.science/r/beta_null_hpc-6490/README.md). 
+[HPC null model workflow](https://github.com/williamkannis/beta_null_hpc.git). 
 We do, however, provide the code used to prepare said data and can offer
 data upon completed data requests. See below for more information.
 
@@ -364,5 +369,13 @@ analysis ```filtered_species_list.csv```.
 These scripts and data can be found in the ```Diversity Input Data``` directory.
 
 The phylogenetic tree used for multidimensional diversity metrics, and 
-information on its methodology can be found [here](https://anonymous.4open.science/r/fishscales_super_tree-01FC/README.md).
+information on its methodology can be found [here](https://doi.org/10.5281/zenodo.22100238).
 
+
+## License
+
+The code in this repository is licensed under the
+[MIT License](LICENSE).
+
+Associated data are released under
+a [Creative Commons Attribution 4.0 International License (CC BY 4.0)].
