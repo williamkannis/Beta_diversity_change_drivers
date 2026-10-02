@@ -3,9 +3,9 @@
 
 Code and data for reproducing the analyses presented in:
 
-> Annis et al. (2026). Null models reveal differing drivers of multidimensional 
->beta diversity change in invaded metacommunities.*Diversity and Distributions*. 
-Accepted for publication.
+[Annis et al. (2026). Null models reveal differing drivers of multidimensional 
+beta diversity change in invaded metacommunities. *Diversity and Distributions*](https://doi.org/10.1111/ddi.70270) 
+
 
 This repository contains the R code and data products required to
 reproduce the analyses, figures, and tables presented in the manuscript.
@@ -27,9 +27,10 @@ OrcID: 0009-0003-3541-8503
 
 If you use this code or data, please cite:
 
->Annis, W.K., Thompson, L.M., Bower, L.M., Midway, S.M., Peoples, B.K. (2026). Null 
-models reveal differing drivers of multidimensional beta diversity change in 
-invaded metacommunities. *Diversity and Distributions*. Accepted for publication.
+>Annis, W. K., Thompson, L. M., Bower, L. M., Midway, S. R. & Peoples, B. K. 
+(2026). Null models reveal differing drivers of multidimensional beta diversity 
+change in invaded metacommunities.  Diversity and Distributions, 32(9): e70270. 
+https://doi.org/10.1111/ddi.70270. 
 
 >Annis, W.K., Thompson, L.M., Bower, L.M., Midway, S.M., Peoples, B.K. (2026). 
 Data for "Null models reveal differing drivers of multidimensional beta diversity 
